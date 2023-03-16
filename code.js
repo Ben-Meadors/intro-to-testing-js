@@ -18,3 +18,7 @@ function sayHello(input) {
 function isFive(somenum){
     return (somenum === 5)
 }
+
+function isEven(number){
+    return number % 2 ==0
+}

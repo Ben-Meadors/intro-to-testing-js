@@ -1,4 +1,10 @@
 // Unit tests for the helloWorld function
+
+const randomBoolean = Boolean(Math.round(Math.random()));
+
+
+
+
 describe('helloWorld', function() {
     it('should be a defined function', function() {
       expect(typeof helloWorld).toBe('function');
@@ -23,6 +29,37 @@ describe('isFive', function(){
     });
     it('should return value 5 if passed 5', function () {
         expect(isFive(5)).toBe(true);
+    });
+});
+
+
+describe('isEven', function (){
+    it('should be a defined function', function(){
+        expect(typeof isEven).toBe('function');
+    });
+    it('should return true if executed with 2', function () {
+        expect(isEven(2)).toBe(true);
+    });
+    it('should return true if executed with -4', function () {
+        expect(isEven(-4)).toBe(true);
+    });
+    it('should return false if executed with 3', function () {
+        expect(isEven(3)).toBe(false);
+    });
+    it('should return false if executed with "banana"', function () {
+        expect(isEven("banana")).toBe(false);
+    });
+    it('should return true if executed with "8"', function () {
+        expect(isEven("8")).toBe(true);
+    });
+    it('should return false if executed with Infinity', function () {
+        expect(isEven(Infinity)).toBe(false);
+    });
+    it('should return false when passed a boolean ' + randomBoolean, function() {
+        expect(isEven(randomBoolean)).toBe(false);
+    });
+    it("should never return 'undefined' when called", function() {
+        expect(isEven()).not.toBe(undefined);
     });
 });
 
