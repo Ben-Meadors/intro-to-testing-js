@@ -20,5 +20,9 @@ function isFive(somenum){
 }
 
 function isEven(number){
-    return number % 2 ==0
+    return number % 2 ===0
+}
+
+function isVowel(letter){
+    return letter === "A" || letter === "E" || letter === "I" || letter === "O" || letter === "U" || letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u";
 }
