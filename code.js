@@ -20,9 +20,17 @@ function isFive(somenum){
 }
 
 function isEven(number){
-    return number % 2 ===0
+    return parseInt(number) % 2 === 0
 }
 
 function isVowel(letter){
     return letter === "A" || letter === "E" || letter === "I" || letter === "O" || letter === "U" || letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u";
+}
+
+function add(num1, num2) {
+    if (isNaN(num1) || isNaN(num2)){
+        return "NaN"
+    } else {
+        return parseInt(num1) + parseInt(num2);
+    }
 }
