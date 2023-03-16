@@ -14,6 +14,18 @@ describe('helloWorld', function() {
     });
 });
 
+describe('isFive', function(){
+    it('should be a defined function', function(){
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean', function(){
+        expect(typeof isFive()).toBe("boolean");
+    });
+    it('should return value 5 if passed 5', function () {
+        expect(isFive(5)).toBe(true);
+    });
+});
+
 describe("sayHello", function(){
     it("Should be a defined function", function(){
         expect(typeof sayHello).toBe("function");

@@ -15,3 +15,6 @@ function sayHello(input) {
     }
 }
 
+function isFive(somenum){
+    return (somenum === 5)
+}
